@@ -3,7 +3,7 @@
 2 usefull directives
 
 1) universal tabs
-
+```
 <tabs>
   <tab>
     <tab-title>
@@ -22,9 +22,10 @@
     </tab-content>
   </tab>
 </tabs>
-
+```
 2) view port checker
-
+```
 <test-component *ifViewportSize="'small'" [value]="1"></test-component>
 <test-component *ifViewportSize="'medium'" [value]="2"></test-component>
 <test-component *ifViewportSize="'large'" [value]="3"></test-component>
+```
