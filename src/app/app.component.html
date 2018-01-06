@@ -1,4 +1,4 @@
-
+<h1>Tabs</h1>
 <tabs>
   <tab>
     <tab-title>
@@ -16,12 +16,12 @@
       Content 2
     </tab-content>
   </tab>
-  <tab *ngIf="visible">
-    <tab-title>
-      Title 3
-    </tab-title>
-    <tab-content>
-      Content 3
-    </tab-content>
-  </tab>
 </tabs>
+
+
+<hr />
+<h1>View Port Size</h1>
+
+<test-component *ifViewportSize="'small'" [value]="1"></test-component>
+<test-component *ifViewportSize="'medium'" [value]="2"></test-component>
+<test-component *ifViewportSize="'large'" [value]="3"></test-component>

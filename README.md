@@ -1,27 +1,30 @@
 # UiKit
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.3.
+2 usefull directives
 
-## Development server
+1) universal tabs
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+<tabs>
+  <tab>
+    <tab-title>
+      Title 1
+    </tab-title>
+    <tab-content>
+      <i>Content</i> 1
+    </tab-content>
+  </tab>
+  <tab>
+    <tab-title>
+      <i>Title</i> 2
+    </tab-title>
+    <tab-content>
+      Content 2
+    </tab-content>
+  </tab>
+</tabs>
 
-## Code scaffolding
+2) view port checker
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+<test-component *ifViewportSize="'small'" [value]="1"></test-component>
+<test-component *ifViewportSize="'medium'" [value]="2"></test-component>
+<test-component *ifViewportSize="'large'" [value]="3"></test-component>
